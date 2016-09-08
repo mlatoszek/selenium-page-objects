@@ -11,7 +11,7 @@ namespace PageObjectsInSelenium
         static void Main(string[] args)
         {
             //Deklarujemy źródło z którego będziemy pobierać dane do wyszukiwania
-            IDataSource source = new CsvDataSource();
+            IDataSource source = new DatabaseDataSource();
 
             // Wołamy metodę która pobiera nam dane do wyszukiwania
             var dataSource = source.GetSearchData();
